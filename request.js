@@ -5,7 +5,7 @@ const https = require("http");
 // Fill in your emails below, in the emails variable: Each email needs to be separated with a comma
 // Ex: 
 // let emails = "test.email@gmail.com,test.email@fetchrewards.com"
-let emails = ""
+let emails = `insert emails here` // insert emails into the string (quotations)
 
 const reqURL = "http://unique-emails-fetch-rewards.herokuapp.com/?array=" + emails;
 // To run this in your local environment, use the URL below instead

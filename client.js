@@ -11,9 +11,9 @@ const server = http.createServer((req, res) => {
     // If there is an array provided in the parameters
     if (queryObject.array) {
         const emails = queryObject.array.split(",");
-        let unique = numUnique(emails)
+        let unique = `Number of unique emails: ${numUnique(emails)}`
         res.setHeader('Content-Type', 'application/json');
-        res.end(JSON.stringify(unique));
+        res.end(unique);
         res.statusCode = 200;
     } else {
         res.setHeader('Content-Type', 'text/plain');
@@ -41,7 +41,7 @@ function numUnique(emails) {
             let char= email[i];
             // I used OR char === " " because "+" in URLs becomes " ", so when it comes in it gets converted to spaces
             if (char === "+" || char === " ") ignore = true;
-            if (char === ".") continue;
+            if (char === ".") continue;  
             if (ignore && char == "@") ignore = false;
             if (ignore) continue;
             reduced.push(char);
