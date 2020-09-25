@@ -13,7 +13,7 @@ I completed this in Node.js version 12.16.3 and deployed to Heroku at: http://un
 
 There are two ways to run this:
 1. You can send a request through your browser like this:
-```http://unique-emails-fetch-rewards.herokuapp.com/?array=``` + emails
+```http://unique-emails-fetch-rewards.herokuapp.com/?array=``` + emails.
    The emails should be listed as parameters with key=array and value=emails separated by commas.
    For example:
    ```http://unique-emails-fetch-rewards.herokuapp.com/?array=test.email@gmail.com,test.email@fetchrewards.com```
