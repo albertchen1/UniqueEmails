@@ -7,13 +7,14 @@ Examples
 test.email@gmail.com, test.email+spam@gmail.com and testemail@gmail.com will all go to the same address, and thus the result should be 1.
 test.email@gmail.com and test.email@fetchrewards.com are two different email addresses, and thus the result should be 2.
 
-I completed this in Node.js version 12.16.3 and deployed to Heroku at: http://unique-emails-fetch-rewards.herokuapp.com/
+I completed this in Node.js version 12.16.3 and deployed to Heroku at: [Link](http://unique-emails-fetch-rewards.herokuapp.com/)
 
 There are two ways to run this:
 1. You can send a request through your browser like this:
+```   http://unique-emails-fetch-rewards.herokuapp.com/?array=test.email@gmail.com,test.email@fetchrewards.com```
    The emails should be listed as parameters with key=array and value=emails separated by commas.
    For example:
-   http://unique-emails-fetch-rewards.herokuapp.com/?array=test.email@gmail.com,test.email@fetchrewards.com
+
 
 2. You can send a request through an IDE, like the request.js file provided. 
    To use the request.js file, assign the emails variable to the emails as a string separated by commas.
