@@ -26,7 +26,7 @@ If you want to run this on your local environment:
    Download/clone the Github repo on your local environment.
    Start the server by running node client.js in your terminal.
    Assign the emails variable to the emails as a string separated by commas in the request.js file.
-   Send the request by running node request.js in another terminal
+   Send the request by running node request.js in another terminal.
 
    You can also test this on your local browser by sending a request in the format specified in the request.js file
    Example: 
