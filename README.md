@@ -19,7 +19,7 @@ There are two ways to run this:
    ```http://unique-emails-fetch-rewards.herokuapp.com/?array=test.email@gmail.com,test.email@fetchrewards.com```
 
 2. You can send a request through an IDE, like the request.js file provided. 
-   To use the request.js file, assign the emails variable to the emails as a string separated by commas.
+   To use the request.js file, assign the emails to the ```emails``` variable in request.js as a string separated by commas.
 
 
 If you want to run this on your local environment:
